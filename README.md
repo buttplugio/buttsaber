@@ -1,4 +1,4 @@
-# Buttplug Protocol Implementation - C# .Net Standard/Framework
+# ButtSaber
 
 [![Patreon donate button](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/qdot)
 [![Discourse Forum](https://img.shields.io/badge/discourse-forum-blue.svg)](https://metafetish.club)
