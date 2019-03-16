@@ -29,6 +29,7 @@ stunt a breeze.
 
 - [BSDarthMaul](https://github.com/PureDark/BSDarthMaul/)
 - [RumbleEnhancer](https://github.com/123099/RumbleEnhancer)
+- [Intro-Skip](https://github.com/Kylemc1413/Intro-Skip)
 - [BeatSaber Modding Discord and ModSaber.org](https://www.modsaber.org/)
 - [PlayHooky](https://github.com/wledfor2/PlayHooky) (For hook manager class)
 

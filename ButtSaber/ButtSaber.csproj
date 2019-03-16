@@ -36,11 +36,21 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\BSDarthMaul\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Buttplug, Version=0.3.3.891, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Buttplug.dll</HintPath>
+    </Reference>
+    <Reference Include="Buttplug.Server.Managers.UWPBluetoothManager">
+      <HintPath>.\Buttplug.Server.Managers.UWPBluetoothManager.dll</HintPath>
+    </Reference>
     <Reference Include="IllusionInjector">
       <HintPath>..\..\BSDarthMaul\IllusionInjector.dll</HintPath>
     </Reference>
     <Reference Include="IllusionPlugin">
       <HintPath>..\..\BSDarthMaul\IllusionPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>.\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,11 +69,20 @@
     <Reference Include="UnityEngine.VRModule">
       <HintPath>..\..\BSDarthMaul\UnityEngine.VRModule.dll</HintPath>
     </Reference>
+    <Reference Include="YamlDotNet">
+      <HintPath>.\YamlDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtSaberBehavior.cs" />
+    <Compile Include="ButtSaberHooks.cs" />
+    <Compile Include="HookUtil.cs" />
     <Compile Include="HookManager.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "C:\Users\qdot\code\ButtSaber\ButtSaber\bin\Release\ButtSaber.dll" "c:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Plugins\ButtSaber.dll"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
