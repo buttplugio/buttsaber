@@ -22,8 +22,6 @@ namespace ButtSaber
             {
                 _stream = new NamedPipeClientStream("GVRPipe");
                 _stream.Connect();
-                var msg = Encoding.ASCII.GetBytes("Testing IPC!");
-                _stream.Write(msg, 0, msg.Length);
             }
             catch (Exception ex)
             {
