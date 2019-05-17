@@ -22,33 +22,36 @@ If you find this project helpful, you can [support us via
 Patreon](http://patreon.com/qdot)! Every donation helps us afford more
 hardware to reverse, document, and write code for!
 
-## Thanks
+## Installation and Usage
 
-Thanks go to the follow projects/communities for making this stupid
-stunt a breeze.
+Running ButtSaber requires being on Windows 7/10 (10 if you want to
+use Bluetooth hardware) and the following software:
 
-- [BSDarthMaul](https://github.com/PureDark/BSDarthMaul/)
-- [RumbleEnhancer](https://github.com/123099/RumbleEnhancer)
-- [Intro-Skip](https://github.com/Kylemc1413/Intro-Skip)
-- [BeatSaber Modding Discord and ModSaber.org](https://www.modsaber.org/)
-- [PlayHooky](https://github.com/wledfor2/PlayHooky) (For hook manager class)
+- [Intiface Desktop](https://github.com/intiface/intiface-desktop/releases)
+- [Intiface GVR](https://github.com/intiface/intiface-game-vibration-router)
+- [SharpMonoInjector](https://github.com/warbler/SharpMonoInjector) (Soon to be integrated in to the GVR)
 
-## Installation
+Steps to run at the moment:
 
-Copy the ButtSaber.dll file into your Beat Saber Plugins folder. You
-will also need to have [IPA](https://github.com/Eusth/IPA) set up in the Beat Saber folder.
+- Start Intiface Desktop, start server with IPC listening.
+- Start Intiface GVR. Should connect automatically. Scan and choose
+  hardware. Go to GVR - IPC Panel
+- Start Beat Saber.
+- Start SharpMonoInjector. Choose ButtSaber.dll, fill in class with
+  "Main", function with "Load". Hit inject.
+- Assuming everything worked, there should be a "Connected" status in
+  the GVR - IPC Panel, and toys selected in the Intiface window will
+  vibrate when controllers do.
 
 ## Compiling
 
-The project should compile with Visual Studio 2017, provided you have
-the required DLLs. This requires:
+The project should compile with Visual Studio 2019, provided you have
+the required DLLs outside the project. The project will fetch Harmony
+via NuGet, but the other required modules are:
 
-- IllusionPlugin.dll from [IPA](https://github.com/Eusth/IPA)
-- IllusionInjector.dll from [IPA](https://github.com/Eusth/IPA)
 - Assembly-Csharp.dll from your Beat Saber install
 - UnityEngine.dll from your Beat Saber install
-- UnityEngine.CoreModule from your Beat Saber install
-- UnityEngine.VRModule from your Beat Saber install
+- UnityEngine.XRModule from your Beat Saber install
 
 Note that the modules from Beat Saber will need to match the version
 you have installed on your system.
