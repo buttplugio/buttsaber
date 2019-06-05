@@ -10,3 +10,5 @@ Router](https://github.com/intiface/intiface-game-haptics-router)
 software.
 
 Check that link for more info and an actual, working release.
+
+Or just go watch this video: https://www.youtube.com/watch?v=gPlhEoa3Fcg
