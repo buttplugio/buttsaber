@@ -6,7 +6,7 @@
 [![Twitter](https://img.shields.io/twitter/follow/buttplugio.svg?style=social&logo=twitter)](https://twitter.com/buttplugio)
 
 ButtSaber is now part of the [Intiface Game Haptics
-Router](https://github.com/intiface/intiface-game-haptics-router)
+Router](https://intiface.com/ghr)
 software.
 
 Check that link for more info and an actual, working release.
